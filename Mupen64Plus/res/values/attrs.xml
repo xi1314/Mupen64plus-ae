@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PathPreference">
+        <attr name="selectionMode" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="SeekBarPreference">
+        <attr name="minimumValue" format="integer" />
+        <attr name="maximumValue" format="integer" />
+        <attr name="stepSize" format="integer" />
+        <attr name="units" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MultiSelectListPreference">
+        <attr name="delimiter" format="string" />
+        <attr name="separator" format="string" />
+    </declare-styleable>
+
+</resources>

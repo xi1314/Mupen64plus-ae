@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ***********************************************************************************
+    RECOMMENDED PRACTICES FOR DESIGNERS & DEVELOPERS:
+    
+    Please follow the recommended practices described in:
+        res/values/strings.xml
+        res/xml/preferences.xml
+        
+    DO NOT TRANSLATE ANY STRINGS IN THIS FILE!
+    ***********************************************************************************
+-->
+<resources>
+
+    <!-- Locales -->
+    <string-array name="localeOverride_values" translatable="false">
+        <item></item>
+        <item>ca</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>gl</item>
+        <item>hr</item>
+        <item>it</item>
+        <item>hu</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>sv</item>
+        <item>tr</item>
+        <item>el</item>
+        <item>ru</item>
+        <item>ja</item>
+    </string-array>
+
+    <string name="localeOverride_default" translatable="false"></string>
+
+    <!-- Touchscreen Refresh List -->
+    <string-array name="touchscreenRefresh_entries" translatable="false">
+        <item>@string/touchscreenRefresh_entryNever</item>
+        <item>@string/touchscreenRefresh_entryOccasionally</item>
+        <item>@string/touchscreenRefresh_entryFrequently</item>
+    </string-array>
+    <string-array name="touchscreenRefresh_values" translatable="false">
+        <item>0</item>
+        <item>10</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="touchscreenRefresh_default" translatable="false">0</string>
+
+    <!-- Touchscreen Auto-Hold Methods -->
+    <string-array name="touchscreenAutoHold_entries" translatable="false">
+        <item>@string/touchscreenAutoHold_entryDisabled</item>
+        <item>@string/touchscreenAutoHold_entryLongPress</item>
+        <item>@string/touchscreenAutoHold_entrySlideOut</item>
+    </string-array>
+    <string-array name="touchscreenAutoHold_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="touchscreenAutoHold_default" translatable="false">0</string>
+
+    <!-- Touchscreen Auto-Holdable Buttons -->
+    <string-array name="touchscreenAutoHoldables_entries" translatable="false">
+        <item>@string/inputMapActivity_btnL</item>
+        <item>@string/inputMapActivity_btnR</item>
+        <item>@string/inputMapActivity_btnZ</item>
+        <item>@string/inputMapActivity_btnS</item>
+        <item>@string/inputMapActivity_btnA</item>
+        <item>@string/inputMapActivity_btnB</item>
+        <item>@string/inputMapActivity_btnCR</item>
+        <item>@string/inputMapActivity_btnCL</item>
+        <item>@string/inputMapActivity_btnCD</item>
+        <item>@string/inputMapActivity_btnCU</item>
+        <item>@string/inputMapActivity_btnDR</item>
+        <item>@string/inputMapActivity_btnDL</item>
+        <item>@string/inputMapActivity_btnDD</item>
+        <item>@string/inputMapActivity_btnDU</item>
+    </string-array>
+    <string-array name="touchscreenAutoHoldables_values" translatable="false">
+        <item>13</item>
+        <item>12</item>
+        <item>5</item>
+        <item>4</item>
+        <item>7</item>
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="touchscreenAutoHoldables_default" translatable="false">13~12~5</string>
+
+    <!-- Touchscreen Button Styles -->
+    <string-array name="touchscreenStyle_entries" translatable="false">
+        <item>@string/touchscreenStyle_entryOutline</item>
+        <item>@string/touchscreenStyle_entryShaded</item>
+    </string-array>
+    <string-array name="touchscreenStyle_values" translatable="false">
+        <item>../../images/Mupen64Plus-AE-Outline</item>
+        <item>../../images/Mupen64Plus-AE-Shaded</item>
+    </string-array>
+
+    <string name="touchscreenStyle_default" translatable="false">../../images/Mupen64Plus-AE-Outline</string>
+    
+    <!-- Touchscreen Layout Heights -->
+    <string-array name="touchscreenHeight_entries" translatable="false">
+        <item>@string/touchscreenHeight_entryAuto</item>
+        <item>@string/touchscreenHeight_entryFullHeight</item>
+        <item>@string/touchscreenHeight_entryHalfHeight</item>
+    </string-array>
+    <string-array name="touchscreenHeight_values" translatable="false">
+        <item></item>
+        <item>-Full-Height</item>
+        <item>-Half-Height</item>
+    </string-array>
+
+    <string name="touchscreenHeight_default" translatable="false"></string>
+
+    <!-- Touchscreen Layouts -->
+    <string-array name="touchscreenLayout_entries" translatable="false">
+        <item>@string/touchscreenLayout_entryAnalog</item>
+        <item>@string/touchscreenLayout_entryDigital</item>
+        <item>@string/touchscreenLayout_entryAll</item>
+        <item>@string/touchscreenLayout_entryCustom</item>
+    </string-array>
+    <string-array name="touchscreenLayout_values" translatable="false">
+        <item>Mupen64Plus-AE-Analog</item>
+        <item>Mupen64Plus-AE-Digital</item>
+        <item>Mupen64Plus-AE-All</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string name="touchscreenLayout_default" translatable="false">Mupen64Plus-AE-Analog</string>
+    <string name="touchscreenLayout_fpsOnly" translatable="false">Mupen64Plus-AE-Just-FPS</string>
+
+    <!-- Xperia Play Touchpad Layouts -->
+    <string-array name="touchpadLayout_entries" translatable="false">
+        <item>@string/touchpadLayout_entryDefault</item>
+        <item>@string/touchpadLayout_entryReverse</item>
+    </string-array>
+    <string-array name="touchpadLayout_values" translatable="false">
+        <item>Mupen64Plus-AE-Xperia-Play</item>
+        <item>Mupen64Plus-AE-Xperia-Play-Swapped</item>
+    </string-array>
+
+    <string name="touchpadLayout_default" translatable="false">Mupen64Plus-AE-Xperia-Play</string>
+
+    <!-- Screen Orientation List -->
+    <string-array name="videoOrientation_entries" translatable="false">
+        <item>@string/videoOrientation_entryLandscape</item>
+        <item>@string/videoOrientation_entryReverseLandscape</item>
+        <item>@string/videoOrientation_entryPortrait</item>
+        <item>@string/videoOrientation_entryReversePortrait</item>
+    </string-array>
+    <string-array name="videoOrientation_values" translatable="false">
+        <item>0</item> <!-- ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE -->
+        <item>8</item> <!-- ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE -->
+        <item>1</item> <!-- ActivityInfo.SCREEN_ORIENTATION_PORTRAIT -->
+        <item>9</item> <!-- ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT -->
+    </string-array>
+
+    <string name="videoOrientation_default" translatable="false">0</string>
+
+    <!-- Screen Position List -->
+    <string-array name="videoPosition_entries" translatable="false">
+        <item>@string/videoPosition_entryTop</item>
+        <item>@string/videoPosition_entryMiddle</item>
+        <item>@string/videoPosition_entryBottom</item>
+    </string-array>
+    <string-array name="videoPosition_values" translatable="false">
+        <item>48</item> <!-- Gravity.TOP -->
+        <item>16</item> <!-- Gravity.CENTER_VERTICAL -->
+        <item>80</item> <!-- Gravity.BOTTOM -->
+    </string-array>
+
+    <string name="videoPosition_default" translatable="false">16</string>
+
+    <!-- Screen Resolution List -->
+    <string-array name="videoResolution_entries" translatable="false">
+        <item>@string/videoResolution_entryNative</item>
+        <item>@string/videoResolution_entry960x720</item>
+        <item>@string/videoResolution_entry800x600</item>
+        <item>@string/videoResolution_entry640x480</item>
+        <item>@string/videoResolution_entry480x360</item>
+        <item>@string/videoResolution_entry320x240</item>
+        <item>@string/videoResolution_entry160x120</item>
+    </string-array>
+    <string-array name="videoResolution_values" translatable="false">
+        <item>0</item>
+        <item>720</item>
+        <item>600</item>
+        <item>480</item>
+        <item>360</item>
+        <item>240</item>
+        <item>120</item>
+    </string-array>
+
+    <string name="videoResolution_default" translatable="false">0</string>
+
+    <!-- Screen Scaling List -->
+    <string-array name="videoScaling_entries" translatable="false">
+        <item>@string/videoScaling_entryNone</item>
+        <item>@string/videoScaling_entryZoom</item>
+        <item>@string/videoScaling_entryCrop</item>
+        <item>@string/videoScaling_entryStretch</item>
+    </string-array>
+    <string-array name="videoScaling_values" translatable="false">
+        <item>none</item>
+        <item>zoom</item>
+        <item>crop</item>
+        <item>stretch</item>
+    </string-array>
+
+    <string name="videoScaling_default" translatable="false">zoom</string>
+
+    <!-- Framerate Refresh List -->
+    <string-array name="videoFpsRefresh_entries" translatable="false">
+        <item>@string/videoFpsRefresh_entryNever</item>
+        <item>@string/videoFpsRefresh_entryOccasionally</item>
+        <item>@string/videoFpsRefresh_entryFrequently</item>
+    </string-array>
+    <string-array name="videoFpsRefresh_values" translatable="false">
+        <item>0</item>
+        <item>60</item>
+        <item>15</item>
+    </string-array>
+
+    <string name="videoFpsRefresh_default" translatable="false">0</string>
+
+    <!-- Hardware Profile List -->
+    <string-array name="videoHardwareType_entries" translatable="false">
+        <item>@string/videoHardwareType_entryAuto</item>
+        <item>@string/videoHardwareType_entryStandard</item>
+        <item>@string/videoHardwareType_entryI</item>
+        <item>@string/videoHardwareType_entryO1</item>
+        <item>@string/videoHardwareType_entryO2</item>
+        <item>@string/videoHardwareType_entryQ</item>
+        <item>@string/videoHardwareType_entryT</item>
+        <item>@string/videoHardwareType_entryCustom</item>
+    </string-array>
+    <string-array name="videoHardwareType_values" translatable="false">
+        <item>-1</item>
+        <item>0</item>
+        <item>4</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>999</item>
+    </string-array>
+
+    <string name="videoHardwareType_default" translatable="false">-1</string>
+
+    <!-- GLES2N64 Frameskip List -->
+    <string-array name="gles2N64Frameskip_entries" translatable="false">
+        <item>@string/gles2N64Frameskip_entryNever</item>
+        <item>@string/gles2N64Frameskip_entryUpTo1</item>
+        <item>@string/gles2N64Frameskip_entryUpTo2</item>
+        <item>@string/gles2N64Frameskip_entryUpTo3</item>
+        <item>@string/gles2N64Frameskip_entryUpTo4</item>
+        <item>@string/gles2N64Frameskip_entryUpTo5</item>
+        <item>@string/gles2N64Frameskip_entryExactly1</item>
+        <item>@string/gles2N64Frameskip_entryExactly2</item>
+        <item>@string/gles2N64Frameskip_entryExactly3</item>
+        <item>@string/gles2N64Frameskip_entryExactly4</item>
+        <item>@string/gles2N64Frameskip_entryExactly5</item>
+    </string-array>
+    <string-array name="gles2N64Frameskip_values" translatable="false">
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+        <item>-5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="gles2N64Frameskip_default" translatable="false">-2</string>
+
+    <!-- GLES2Glide64 Frameskip List (re-use gles2n64 strings)-->
+    <string-array name="gles2Glide64Frameskip_entries" translatable="false">
+        <item>@string/gles2N64Frameskip_entryNever</item>
+        <item>@string/gles2N64Frameskip_entryUpTo1</item>
+        <item>@string/gles2N64Frameskip_entryUpTo2</item>
+        <item>@string/gles2N64Frameskip_entryUpTo3</item>
+        <item>@string/gles2N64Frameskip_entryUpTo4</item>
+        <item>@string/gles2N64Frameskip_entryUpTo5</item>
+        <item>@string/gles2N64Frameskip_entryExactly1</item>
+        <item>@string/gles2N64Frameskip_entryExactly2</item>
+        <item>@string/gles2N64Frameskip_entryExactly3</item>
+        <item>@string/gles2N64Frameskip_entryExactly4</item>
+        <item>@string/gles2N64Frameskip_entryExactly5</item>
+    </string-array>
+    <string-array name="gles2Glide64Frameskip_values" translatable="false">
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+        <item>-5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="gles2Glide64Frameskip_default" translatable="false">-5</string>
+
+    <!-- GLES2Rice Mipmapping List -->
+    <string-array name="gles2RiceMipmapping_entries">
+        <item>@string/gles2RiceMipmapping_entryNone</item>
+        <item>@string/gles2RiceMipmapping_entryNearest</item>
+        <item>@string/gles2RiceMipmapping_entryBilinear</item>
+        <item>@string/gles2RiceMipmapping_entryTrilinear</item>
+    </string-array>
+    <string-array name="gles2RiceMipmapping_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <string name="gles2RiceMipmapping_default">0</string>
+
+    <!-- GLES2Rice Screen Update List -->
+    <string-array name="gles2RiceScreenUpdate_entries">
+        <item>@string/gles2RiceScreenUpdate_entryRomDefault</item>
+        <item>@string/gles2RiceScreenUpdate_entryVIOriginUpdate</item>
+        <item>@string/gles2RiceScreenUpdate_entryVIOriginChange</item>
+        <item>@string/gles2RiceScreenUpdate_entryCIChange</item>
+        <item>@string/gles2RiceScreenUpdate_entryFirstCIChange</item>
+        <item>@string/gles2RiceScreenUpdate_entryFirstPrimDraw</item>
+        <item>@string/gles2RiceScreenUpdate_entryBeforeScreenClear</item>
+        <item>@string/gles2RiceScreenUpdate_entryAfterScreenDrawn</item>
+    </string-array>
+    <string-array name="gles2RiceScreenUpdate_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string name="gles2RiceScreenUpdate_default">4</string>
+    
+    <!-- GLES2Rice Texture Enhancement Algorithm List -->
+    <string-array name="gles2RiceTextureEnhancement_entries">
+        <item>@string/gles2RiceTextureEnhancement_entryNone</item>
+        <item>@string/gles2RiceTextureEnhancement_entryScale2x</item>
+        <item>@string/gles2RiceTextureEnhancement_entry2xsai</item>
+        <item>@string/gles2RiceTextureEnhancement_entryHq2x</item>
+        <item>@string/gles2RiceTextureEnhancement_entryLq2x</item>
+        <item>@string/gles2RiceTextureEnhancement_entryHq4x</item>
+        <item>@string/gles2RiceTextureEnhancement_entrySharpen</item>
+        <item>@string/gles2RiceTextureEnhancement_entrySharpen_more</item>
+    </string-array>
+    <string-array name="gles2RiceTextureEnhancement_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string name="gles2RiceTextureEnhancement_default">0</string>
+
+    <!-- Audio Resampling Algorithm List -->
+    <string-array name="audioResampleAlg_entries" translatable="false">
+        <item>@string/audioResampleAlg_entryTrivial</item>
+        <item>@string/audioResampleAlg_entryLinear</item>
+        <item>@string/audioResampleAlg_entryZoh</item>
+        <item>@string/audioResampleAlg_entrySincFastest</item>
+        <item>@string/audioResampleAlg_entrySincMedium</item>
+        <item>@string/audioResampleAlg_entrySincBest</item>
+    </string-array>
+    <string-array name="audioResampleAlg_values" translatable="false">
+        <item>trivial</item>
+        <item>src-linear</item>
+        <item>src-zero-order-hold</item>
+        <item>src-sinc-fastest</item>
+        <item>src-sinc-medium-quality</item>
+        <item>src-sinc-best-quality</item>
+    </string-array>
+
+    <string name="audioResampleAlg_default" translatable="false">trivial</string>
+
+    <!-- Video Plugins -->
+    <string-array name="pluginVideo_entries" translatable="false">
+        <item>@string/pluginVideo_entryNone</item>
+        <item>@string/pluginVideo_entryGles2N64</item>
+        <item>@string/pluginVideo_entryGles2Rice</item>
+        <item>@string/pluginVideo_entryGles2Glide64</item>
+    </string-array>
+    <string-array name="pluginVideo_values" translatable="false">
+        <item></item>
+        <item>libgles2n64.so</item>
+        <item>libgles2rice.so</item>
+        <item>libgles2glide64.so</item>
+    </string-array>
+
+    <string name="pluginVideo_default" translatable="false">libgles2n64.so</string>
+
+    <!-- Audio Plugins -->
+    <string-array name="pluginAudio_entries" translatable="false">
+        <item>@string/pluginAudio_entryNone</item>
+        <item>@string/pluginAudio_entryNoneNoSpeedLimit</item>
+        <item>@string/pluginAudio_entrySdl</item>
+    </string-array>
+    <string-array name="pluginAudio_values" translatable="false">
+        <item></item>
+        <item>nospeedlimit</item>
+        <item>libaudio-sdl.so</item>
+    </string-array>
+
+    <string name="pluginAudio_default" translatable="false">libaudio-sdl.so</string>
+
+    <!-- Input Plugins -->
+    <string-array name="pluginInput_entries" translatable="false">
+        <item>@string/pluginInput_entryNone</item>
+        <item>@string/pluginInput_entryAndroid</item>
+    </string-array>
+    <string-array name="pluginInput_values" translatable="false">
+        <item></item>
+        <item>libinput-android.so</item>
+    </string-array>
+
+    <string name="pluginInput_default" translatable="false">libinput-android.so</string>
+
+    <!-- RSP Plugins -->
+    <string-array name="pluginRsp_entries" translatable="false">
+        <item>@string/pluginRsp_entryNone</item>
+        <item>@string/pluginRsp_entryHle</item>
+        <item>@string/pluginRsp_entryHleNoSound</item>
+    </string-array>
+    <string-array name="pluginRsp_values" translatable="false">
+        <item></item>
+        <item>librsp-hle.so</item>
+        <item>librsp-hle-nosound.so</item>
+    </string-array>
+
+    <string name="pluginRsp_default" translatable="false">librsp-hle.so</string>
+
+    <!-- Core Plugins -->
+    <string-array name="pluginCore_entries" translatable="false">
+        <item>@string/pluginCore_entryV110</item>
+    </string-array>
+    <string-array name="pluginCore_values" translatable="false">
+        <item>libcore.so</item>
+    </string-array>
+
+    <string name="pluginCore_default" translatable="false">libcore.so</string>
+
+    <!-- Audio Buffer Size -->
+    <string-array name="audioBufferSize_entries" translatable="false">
+        <item>@string/audioBufferSize_entry2048</item>
+        <item>@string/audioBufferSize_entry128</item>
+        <item>@string/audioBufferSize_entry8</item>
+    </string-array>
+    <string-array name="audioBufferSize_values" translatable="false">
+        <item>2048</item>
+        <item>128</item>
+        <item>8</item>
+        </string-array>
+
+    <string name="audioBufferSize_default" translatable="false">8</string>
+
+    <!-- R4300 Emulator -->
+    <string-array name="r4300Emulator_entries" translatable="false">
+        <item>@string/r4300Emulator_entryPureInterpreter</item>
+        <item>@string/r4300Emulator_entryCachedInterpreter</item>
+        <item>@string/r4300Emulator_entryDynarec</item>
+    </string-array>
+    <string-array name="r4300Emulator_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="r4300Emulator_default" translatable="false">2</string>
+
+    <!-- Navigation Mode -->
+    <string-array name="navigationMode_entries" translatable="false">
+        <item>@string/navigationMode_entryAuto</item>
+        <item>@string/navigationMode_entryStandard</item>
+        <item>@string/navigationMode_entryBigScreen</item>
+    </string-array>
+    <string-array name="navigationMode_values" translatable="false">
+        <item>auto</item>
+        <item>standard</item>
+        <item>bigscreen</item>
+    </string-array>
+
+    <string name="navigationMode_default" translatable="false">auto</string>
+
+    <!-- Big-Screen Input Mapping Screen -->
+    <string-array name="inputMapActivity_entries" translatable="false">
+        <item>@string/inputMapActivity_btnL</item>
+        <item>@string/inputMapActivity_btnR</item>
+        <item>@string/inputMapActivity_btnZ</item>
+        <item>@string/inputMapActivity_btnS</item>
+        <item>@string/inputMapActivity_btnA</item>
+        <item>@string/inputMapActivity_btnB</item>
+        <item>@string/inputMapActivity_btnCR</item>
+        <item>@string/inputMapActivity_btnCL</item>
+        <item>@string/inputMapActivity_btnCD</item>
+        <item>@string/inputMapActivity_btnCU</item>
+        <item>@string/inputMapActivity_btnDR</item>
+        <item>@string/inputMapActivity_btnDL</item>
+        <item>@string/inputMapActivity_btnDD</item>
+        <item>@string/inputMapActivity_btnDU</item>
+        <item>@string/inputMapActivity_btnAR</item>
+        <item>@string/inputMapActivity_btnAL</item>
+        <item>@string/inputMapActivity_btnAD</item>
+        <item>@string/inputMapActivity_btnAU</item>
+        <item>@string/inputMapActivity_incrementSlot</item>
+        <item>@string/inputMapActivity_saveSlot</item>
+        <item>@string/inputMapActivity_loadSlot</item>
+        <item>@string/inputMapActivity_reset</item>
+        <item>@string/inputMapActivity_pause</item>
+        <item>@string/inputMapActivity_stop</item>
+        <item>@string/inputMapActivity_speedDown</item>
+        <item>@string/inputMapActivity_speedUp</item>
+        <item>@string/inputMapActivity_fastForward</item>
+        <item>@string/inputMapActivity_frameAdvance</item>
+        <item>@string/inputMapActivity_gameshark</item>
+        <item>@string/inputMapActivity_simulateBack</item>
+        <item>@string/inputMapActivity_simulateMenu</item>
+    </string-array>
+    <string-array name="inputMapActivity_values" translatable="false">
+        <item>13</item>
+        <item>12</item>
+        <item>5</item>
+        <item>4</item>
+        <item>7</item>
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>25</item>
+        <item>24</item>
+        <item>29</item>
+        <item>28</item>
+        <item>26</item>
+        <item>27</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+    </string-array>
+
+</resources>
