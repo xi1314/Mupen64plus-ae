@@ -32,6 +32,7 @@
         <item>el</item>
         <item>ru</item>
         <item>ja</item>
+        <item>zh</item>
     </string-array>
 
     <string name="localeOverride_default" translatable="false"></string>

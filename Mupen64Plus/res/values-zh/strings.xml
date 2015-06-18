@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ***********************************************************************************
+    RECOMMENDED PRACTICES FOR DESIGNERS & DEVELOPERS:
+    
+    All strings visible to the user should be defined in this resource file.  Avoid
+    explicitly defining locale-dependent string values in the java code.
+    
+    Please follow the official Android guidelines for writing style:
+        http://developer.android.com/design/style/writing.html
+        http://developer.android.com/design/patterns/settings.html#writing
+    
+    Please follow the official Android guidelines for localization:
+        http://developer.android.com/guide/topics/resources/localization.html
+    Note that localization is easiest when the number of strings is minimized and the
+    strings themselves are concise.  Avoid strings wherever universally-recognized
+    icons will suffice.  Use Android's built-in string resources (@android:string/...)
+    wherever possible to eliminate translation requirements.
+    ***********************************************************************************
+-->
+<resources>
+
+    <!-- ************************************************************************** -->
+    <!-- Menu Strings -->
+    <!-- ************************************************************************** -->
+    <string name="app_name">N64模拟器</string>
+
+    <!-- In-Game Menu -->
+    <string name="menuItem_toggleSpeed">速度 %1$d %%</string>
+    <string name="menuItem_slotSave">保存槽位</string>
+    <string name="menuItem_slotLoad">载入槽位</string>
+    <string name="menuItem_setSlot">存档 %1$d</string>
+    <string name="menuItem_fileSave">保存文件…</string>
+    <string name="menuItem_fileLoad">载入文件…</string>
+    <string name="menuItem_setSpeed">游戏速度</string>
+    <string name="menuItem_paks">扩展包控制</string> <!-- capitalize since trademark -->
+    <string name="menuItem_pak1_empty">玩家 1: 空</string>
+    <string name="menuItem_pak1_mem">玩家 1: 内存包</string> <!-- capitalize since trademark -->
+    <string name="menuItem_pak1_rumble">玩家1: 振动包</string>
+    <string name="menuItem_pak2_empty">玩家2: 空</string>
+    <string name="menuItem_pak2_mem">玩家2: 内存包</string>
+    <string name="menuItem_pak2_rumble">玩家2: 振动</string>
+    <string name="menuItem_pak3_empty">玩家3: 空</string>
+    <string name="menuItem_pak3_mem">玩家3: 内存包</string>
+    <string name="menuItem_pak3_rumble">玩家3: 振动包</string>
+    <string name="menuItem_pak4_empty">玩家4: 空</string>
+    <string name="menuItem_pak4_mem">玩家4: 内存包</string>
+    <string name="menuItem_pak4_rumble">玩家4: 振动包</string>
+    <string name="menuItem_setIme">更改输入法</string>
+    <string name="menuItem_exit">退出</string>
+
+    <!-- Input Mapping Activity -->
+    <string name="menuItem_profiles">配置文件</string>
+    <string name="menuItem_default">默认</string>
+    <string name="menuItem_load">载入…</string>
+    <string name="menuItem_save">保存…</string>
+    <string name="menuItem_ouya">OUYA</string>
+    <string name="menuItem_n64Adapter">N64 USB 适配器</string>
+    <string name="menuItem_ps3">PS3</string>
+    <string name="menuItem_xbox360">Xbox 360</string>
+    <string name="menuItem_xperiaPlay">Xperia PLAY</string>
+    <string name="menuItem_deadzone">死角</string>
+    <string name="menuItem_sensitivity">灵敏度</string>
+    <string name="menuItem_specialVisibility_show">显示特殊功能</string>
+    <string name="menuItem_specialVisibility_hide">隐藏特殊功能</string>
+    <string name="menuItem_axisInfo">模拟信息</string>
+    <string name="menuItem_unmapAll">取消所有</string>
+
+    <!-- ************************************************************************** -->
+    <!-- Toast Messages -->
+    <!-- Developers: Follow punctuation and grammar as shown below -->
+    <!-- ************************************************************************** -->
+
+
+    <!-- Something happening (typically use '-ing' and '…') -->
+    <string name="toast_rebuildingCheats">正在重建金手指数据库…</string>
+    <string name="toast_launchingEmulator">正在启动模拟器…</string>
+    <string name="toast_loadingSession">正在自动恢复游戏…</string>
+    <string name="toast_savingSession">正在自动保存游戏…</string>
+    <string name="toast_loadingSlot">载入槽位 %1$d…</string>
+    <string name="toast_savingSlot">保存槽位 %1$d…</string>
+    <string name="toast_loadingFile">正在载入 %1$s…</string>
+    <string name="toast_savingFile">正在保存 %1$s…</string>
+    <string name="toast_overwritingFile">正在覆盖 %1$s…</string>
+
+    <!-- Something happened (use '.') -->
+    <string name="toast_usingSlot">现在正在使用槽位 %1$d.</string>
+    <string name="toast_sdInaccessible">无法访问SD卡 (断开USB连接并再试一次).</string>
+    <string name="toast_fileReadError">无法读取文件!</string>
+    <string name="toast_fileWriteError">无法写入文件!</string>
+    <string name="toast_crashReportSent">发送报告.</string>
+
+    <!-- ************************************************************************** -->
+    <!-- Preference Menu Strings -->
+    <!-- Developers: Please follow naming conventions described in preferences.xml -->
+    <!-- Developers: In general, capitalize first word only and avoid punctuation -->
+    <!-- ************************************************************************** -->
+
+
+    <!-- Actions (simply launch an action, aren't related to persistent data) -->
+    <string name="actionPlay_title">开始游戏</string>
+    <string name="actionResume_title">恢复游戏</string>
+    <string name="actionResume_summary">使用金手指后可能会发生错误</string>
+    <string name="actionRestart_title">重新开始</string>
+    <string name="actionRestart_summary">使用金手指后建议重启该游戏</string>
+    <string name="actionDeviceInfo_title">设备信息</string>
+    <string name="actionDeviceInfo_summary">设备的硬件与版本信息</string>
+    <string name="actionControllerInfo_title">控制器信息</string>
+    <string name="actionControllerDiagnostics_title">诊断设备的控制器</string>
+    <string name="actionReloadAssets_title">重新加载应用程序资源</string>
+    <string name="actionReloadAssets_summary">不会影响用户设置, 游戏ROM, 游戏存档, 以及其他自定义数据</string>
+    <string name="actionCrashTest_title">测试</string>
+    <string name="actionCrashTest_summary">发送配置报告给开发者</string>
+    <string name="actionResetUserPrefs_title">重置</string>
+    <string name="actionResetUserPrefs_summary">恢复默认设置</string>
+    <string name="actionResetUserPrefs_popupMessage">重置所有的偏好设置为原来的默认状态?<small>"将会覆盖所有所手动修改的配置文件."</small></string>
+    <string name="actionHelp_title">帮助</string>
+    <string name="actionHelp_message">Mupen64Plus是一个自行开发与维护的应用程序.<small>"想要修复图像错误, 请尝试更改 "<i>视频插件</i>".想要修复延迟, 请尝试更改 "<i>视频跳帧</i> 设置或者 <i>视频插件</i>".如果无法使用游戏ROM, 请尝试未压缩成为压缩文件的ROM或者尝试一个不同版本的ROM.关于触摸屏控制的问题, 请尝试更改 "<i>按钮大小</i> 或者 <i>按钮布局</i>".关于其他问题, 如果你仍然无法解决, 请单击下面的 "<i>常见问题</i> 按钮. 关于非游戏特定的错误, 单击下面的 <i>报告错误</i>" 按钮. 我们将会在24小时内应对绝大多数的报告文本."</small>感谢你帮助我们改进此应用程序!</string>
+    <string name="actionHelp_faq">常见问题</string>
+    <string name="actionHelp_reportbug">报告错误</string>
+    <string name="actionAbout_title">关于</string>
+    <string name="actionAbout_message">"版本: %1$s,版本号: %2$d"</string>
+    <string name="actionAbout_credits">开发人员</string>
+    <string name="actionAbout_changelog">更新日志</string>
+
+    <!-- Preference Screens -->
+    <string name="screenSettings_title">设置</string>
+    <string name="screenInput_title">输入</string>
+    <string name="screenInput_summary">控制设置</string>
+    <string name="screenTouchscreen_title">触摸屏</string>
+    <string name="screenTouchscreen_summary">屏幕控制器设置</string>
+    <string name="screenTouchpad_title">触摸板</string>
+    <string name="screenTouchpad_summary">Xperia PLAY 设置</string>
+    <string name="screenVideo_title">视频</string>
+    <string name="screenVideo_summary">图像设置</string>
+    <string name="screenAudio_title">音频</string>
+    <string name="screenAudio_summary">声音设置</string>
+    <string name="screenPlugin_title">插件</string>
+    <string name="screenPlugin_summary">核心设置</string>
+    <string name="screenAdvanced_title">高级功能</string>
+    <string name="screenAdvanced_summary">存储与修复错误设置</string>
+
+    <!-- Preference Categories -->
+    <string name="categoryCheats_title">金手指选项 (长按查看注释)</string>
+    <string name="categoryHardware_title">硬件</string>
+    <string name="categoryOther_title">其他</string>
+    <string name="categoryTouchscreenBehavior_title">行为</string>
+    <string name="categoryTouchscreenAppearance_title">外观</string>
+    <string name="categorySinglePlayer_title">玩家1</string>
+    <string name="categoryMultiPlayer_title">多玩家</string>
+    <string name="categoryGles2N64_title">GLES2N64 设置</string>
+    <string name="categoryGles2Rice_title">GLES2Rice 设置</string>
+    <string name="categoryGles2Glide64_title">GLES2Glide64 设置</string>
+    <string name="categoryData_title">数据</string>
+    <string name="categoryCrashReports_title">崩溃报告</string>
+
+    <!-- Checkbox Preferences -->
+    <string name="playShowCheats_title">启用金手指</string>
+    <string name="playShowCheats_summary">启用后会加载并显示菜单</string>
+    <string name="touchscreenEnabled_title">启用触摸屏</string>
+    <string name="touchscreenFeedback_title">触觉反馈</string>
+    <string name="touchscreenFeedback_summary">点击按钮会产生振动效果</string>
+    <string name="touchpadEnabled_title">启用触摸板</string>
+    <string name="inputOctagonConstraints_title">强制八角形摇杆</string>
+    <string name="inputOctagonConstraints_summary">像真正的N64控制器那样强制模拟八角形运动</string>
+    <string name="inputVolumeMappable_title">映射音量键</string>
+    <string name="inputVolumeMappable_summary">允许使用音量键控制映射</string>
+    <string name="inputShareController_title">共享控制器</string>
+    <string name="inputShareController_summary">允许使用一个单独的输入设备来控制多个玩家</string>
+    <string name="videoRgba8888_title">RGBA_8888 模式</string>
+    <string name="videoRgba8888_summary">在一些设备上可以提高图像质量</string>
+    <string name="gles2N64Fog_title">雾化效果</string>
+    <string name="gles2N64Fog_summary">(需要工作)</string>
+    <string name="gles2N64Sai_title">2xSaI 纹理过滤器</string>
+    <string name="gles2N64Sai_summary">减少纹理像素</string>
+    <string name="gles2N64ScreenClear_title">强制清晰画面</string>
+    <string name="gles2N64ScreenClear_summary">禁用可以提升速度 (可能会导致视频错误)</string>
+    <string name="gles2N64AlphaTest_title">透明测试</string>
+    <string name="gles2N64AlphaTest_summary">禁用可以提升速度 (可能会导致黑色纹理)</string>
+    <string name="gles2N64DepthTest_title">深度测试</string>
+    <string name="gles2N64DepthTest_summary">禁用可以提升速度 (可能会导致背景闪烁)</string>
+    <string name="gles2RiceAutoFrameskip_title">自动跳帧</string>
+    <string name="gles2RiceAutoFrameskip_summary">运用帧数率来提升游戏速度</string>
+    <string name="gles2RiceFastTexture_title">快速加载纹理</string>
+    <string name="gles2RiceFastTexture_summary">修复圆形效果</string>
+    <string name="gles2RiceForceTextureFilter_title">纹理过滤器</string>
+    <string name="gles2RiceForceTextureFilter_summary">修复远方对象的闪光与模糊纹理</string>
+    <string name="gles2RiceHiResTextures_title">高分辨率纹理</string>
+    <string name="gles2RiceHiResTextures_summary">使用外部纹理包</string>
+    <string name="gles2RiceFog_title">雾化效果</string>
+    <string name="gles2RiceFog_summary">显示雾化效果</string>
+    <string name="audioSwapChannels_title">交换声道</string>
+    <string name="audioSwapChannels_summary">交换左声道和右声道</string>
+
+    <!-- List Preferences (in this app, most ListPreferences use android:summary="@string/selectedValue") -->
+    <string name="touchscreenAutoHold_title">自动按住按钮</string>
+    <string name="touchscreenAutoHold_entryDisabled">禁用</string>
+    <string name="touchscreenAutoHold_entryLongPress">长按</string>
+    <string name="touchscreenAutoHold_entrySlideOut">结束滑动</string>
+    <string name="touchscreenAutoHoldables_title">紧按住按钮</string>
+    <string name="touchscreenRefresh_title">摇杆动画</string>
+    <string name="touchscreenRefresh_entryNever">永不</string>
+    <string name="touchscreenRefresh_entryOccasionally">偶尔</string>
+    <string name="touchscreenRefresh_entryFrequently">频繁</string>
+    <string name="touchscreenStyle_title">按钮风格</string>
+    <string name="touchscreenStyle_entryOutline">轮廓</string>
+    <string name="touchscreenStyle_entryShaded">阴影</string>
+    <string name="touchscreenHeight_title">按钮垂直间距</string>
+    <string name="touchscreenHeight_entryAuto">自动</string>
+    <string name="touchscreenHeight_entryFullHeight">全高度</string>
+    <string name="touchscreenHeight_entryHalfHeight">半高度</string>
+    <string name="touchscreenLayout_title">按钮布局</string>
+    <string name="touchscreenLayout_entryAnalog">Analog (by roymustang16)</string>
+    <string name="touchscreenLayout_entryDigital">Digital (by roymustang16)</string>
+    <string name="touchscreenLayout_entryAll">Both (by roymustang16)</string>
+    <string name="touchscreenLayout_entryCustom">自定义 (查看 http://tinyurl.com/984ofyo)</string>
+    <string name="touchpadLayout_title">触摸板布局</string>
+    <string name="touchpadLayout_entryDefault">左板: 模拟控制; 右板: C 按钮</string>
+    <string name="touchpadLayout_entryReverse">左板: C 按钮; 右板: 模拟控制</string>
+    <string name="videoOrientation_title">屏幕方向</string>
+    <string name="videoOrientation_entryLandscape">横屏</string>
+    <string name="videoOrientation_entryReverseLandscape">翻转横屏</string>
+    <string name="videoOrientation_entryPortrait">竖屏</string>
+    <string name="videoOrientation_entryReversePortrait">翻转竖屏</string>
+    <string name="videoPosition_title">垂直画面位置</string>
+    <string name="videoPosition_entryBottom">底部</string>
+    <string name="videoPosition_entryMiddle">中间</string>
+    <string name="videoPosition_entryTop">顶部</string>
+    <string name="videoResolution_title">显示分辨率</string>
+    <string name="videoResolution_entryNative">自动适配 (最高质量)</string>
+    <string name="videoResolution_entry960x720">960 x 720</string>
+    <string name="videoResolution_entry800x600">800 x 600</string>
+    <string name="videoResolution_entry640x480">640 x 480</string>
+    <string name="videoResolution_entry480x360">480 x 360</string>
+    <string name="videoResolution_entry320x240">320 x 240</string>
+    <string name="videoResolution_entry160x120">160 x 120 (最高帧率)</string>
+    <string name="videoScaling_title">画面缩放</string>
+    <string name="videoScaling_entryNone">"无"<small>使用上面已选择的分辨率</small></string>
+    <string name="videoScaling_entryZoom">"放大"<small>充满屏幕, 保持原始比例 (添加黑色背景)</small></string>
+    <string name="videoScaling_entryCrop">"修剪"<small>充满屏幕, 保持原始比例 (剪切图像画面)</small></string>
+    <string name="videoScaling_entryStretch">"Stretch"<small>完全充满屏幕, 无黑色背景 (添加图像变形)</small></string>
+    <string name="videoFpsRefresh_title">显示帧率</string>
+    <string name="videoFpsRefresh_entryNever">永不</string>
+    <string name="videoFpsRefresh_entryOccasionally">偶尔</string>
+    <string name="videoFpsRefresh_entryFrequently">频繁</string>
+    <string name="videoHardwareType_title">减少闪烁</string>
+    <string name="videoHardwareType_entryAuto">自动检测手机/平板模式</string>
+    <string name="videoHardwareType_entryStandard">标准配置文件</string>
+    <string name="videoHardwareType_entryI">I 配置文件</string>
+    <string name="videoHardwareType_entryO1">O-1 配置文件</string>
+    <string name="videoHardwareType_entryO2">O-2 配置文件</string>
+    <string name="videoHardwareType_entryQ">Q 配置文件</string>
+    <string name="videoHardwareType_entryT">T 配置文件</string>
+    <string name="videoHardwareType_entryCustom">自定义配置文件</string>
+    <string name="customPolygonOffset_title">抵消多边形</string>
+    <string name="customPolygonOffset_summary">自定义闪烁减少偏离</string>
+    <string name="gles2N64Frameskip_title">跳帧</string>
+    <string name="gles2N64Frameskip_entryNever">永不跳帧</string>
+    <string name="gles2N64Frameskip_entryUpTo1">不超过1帧</string>
+    <string name="gles2N64Frameskip_entryUpTo2">不超过2帧</string>
+    <string name="gles2N64Frameskip_entryUpTo3">不超过3帧</string>
+    <string name="gles2N64Frameskip_entryUpTo4">不超过4帧</string>
+    <string name="gles2N64Frameskip_entryUpTo5">不超过5帧</string>
+    <string name="gles2N64Frameskip_entryExactly1">强制为1帧</string>
+    <string name="gles2N64Frameskip_entryExactly2">强制为2帧</string>
+    <string name="gles2N64Frameskip_entryExactly3">强制为3帧</string>
+    <string name="gles2N64Frameskip_entryExactly4">强制为4帧</string>
+    <string name="gles2N64Frameskip_entryExactly5">强制为5帧</string>
+    <string name="gles2RiceMipmapping_title">过滤</string>
+    <string name="gles2RiceMipmapping_entryNone">无</string>
+    <string name="gles2RiceMipmapping_entryNearest">最接近</string>
+    <string name="gles2RiceMipmapping_entryBilinear">双线性</string>
+    <string name="gles2RiceMipmapping_entryTrilinear">三线性</string>
+    <string name="gles2RiceScreenUpdate_title">画面更新方式</string>
+    <string name="gles2RiceScreenUpdate_entryRomDefault">ROM 默认</string>
+    <string name="gles2RiceScreenUpdate_entryVIOriginUpdate">VI 更新源</string>
+    <string name="gles2RiceScreenUpdate_entryVIOriginChange">VI 更改源</string>
+    <string name="gles2RiceScreenUpdate_entryCIChange">CI 更改</string>
+    <string name="gles2RiceScreenUpdate_entryFirstCIChange">首个 CI 更改</string>
+    <string name="gles2RiceScreenUpdate_entryFirstPrimDraw">首个原始作画</string>
+    <string name="gles2RiceScreenUpdate_entryBeforeScreenClear">画面清晰之前</string>
+    <string name="gles2RiceScreenUpdate_entryAfterScreenDrawn">画面作画之后</string>
+    <string name="gles2RiceTextureEnhancement_title">高级/增强纹理</string>
+    <string name="gles2RiceTextureEnhancement_entryNone">无</string>
+    <string name="gles2RiceTextureEnhancement_entryScale2x">比例 2x</string>
+    <string name="gles2RiceTextureEnhancement_entry2xsai">2x SaI</string>
+    <string name="gles2RiceTextureEnhancement_entryHq2x">HQ2x</string>
+    <string name="gles2RiceTextureEnhancement_entryLq2x">LQ2x</string>
+    <string name="gles2RiceTextureEnhancement_entryHq4x">HQ4x</string>
+    <string name="gles2RiceTextureEnhancement_entrySharpen">锐化</string>
+    <string name="gles2RiceTextureEnhancement_entrySharpen_more">更加锐化</string>
+    <string name="audioResampleAlg_title">重新取样算法</string>
+    <string name="audioResampleAlg_entryTrivial">细微</string>
+    <string name="audioResampleAlg_entryLinear">线性插值</string>
+    <string name="audioResampleAlg_entryZoh">零按住命令</string>
+    <string name="audioResampleAlg_entrySincFastest">Sinc (最快)</string>
+    <string name="audioResampleAlg_entrySincMedium">Sinc (中等)</string>
+    <string name="audioResampleAlg_entrySincBest">Sinc (最好)</string>
+    <string name="pluginVideo_title">视频</string>
+    <string name="pluginVideo_entryNone">无 (禁用视频)</string>
+    <string name="pluginVideo_entryGles2N64">"gles2n64"<small>(适应于 GLN64 v0.4.1)</small></string>
+    <string name="pluginVideo_entryGles2Rice">"gles2rice"<small>(适应于 Rice Video v6.1.0(b))</small></string>
+    <string name="pluginVideo_entryGles2Glide64">"gles2glide64"<small>(适应于 Glide64 Final (十周年))</small></string>
+    <string name="pluginAudio_title">音频</string>
+    <string name="pluginAudio_entryNone">无 (禁用音频)</string>
+    <string name="pluginAudio_entryNoneNoSpeedLimit">无修复 (禁用音频, 无速度限制)</string>
+    <string name="pluginAudio_entrySdl">mupen64plus-音频-sdl, v2.0</string>
+    <string name="pluginInput_title">输入</string>
+    <string name="pluginInput_entryNone">无 (禁用输入)</string>
+    <string name="pluginInput_entryAndroid">安卓输入</string>
+    <string name="pluginRsp_title">现实信号处理器 (RSP)</string>
+    <string name="pluginRsp_entryNone">无 (禁用RSP)</string>
+    <string name="pluginRsp_entryHle">mupen64plus-rsp-hle, v2.0</string>
+    <string name="pluginRsp_entryHleNoSound">"mupen64plus-rsp-hle-nosound, v2.0"<small>(没有音频处理, 速度修改)</small></string>
+    <string name="pluginCore_title">模拟器核心</string>
+    <string name="pluginCore_entryV110">mupen64plus-核心, v2.0</string>
+    <string name="r4300Emulator_title">R4300 模拟器</string>
+    <string name="r4300Emulator_entryPureInterpreter">纯注释器</string>
+    <string name="r4300Emulator_entryCachedInterpreter">缓存注释器</string>
+    <string name="r4300Emulator_entryDynarec">动态回编译器 (dynarec)</string>
+    <string name="navigationMode_title">可访问性</string>
+    <string name="navigationMode_summary">菜单导航模式: %1$s</string>
+    <string name="navigationMode_entryAuto">自动选择设备配置</string>
+    <string name="navigationMode_entryStandard">标准模式</string>
+    <string name="navigationMode_entryBigScreen">大屏模式 (没有触摸屏; 只能使用gamepad/键盘输入)</string>
+    <string name="audioBufferSize_title">音频缓冲区大小</string>
+    <string name="audioBufferSize_entry2048">默认</string>
+    <string name="audioBufferSize_entry128">低延迟 (试验性)</string>
+    <string name="audioBufferSize_entry8">超低延迟 (试验性)</string>
+    <string name="localeOverride_title">语言</string>
+    <string name="localeOverride_entrySystemDefault">系统默认</string>
+
+    <!-- ACRA Preferences (key names must not be changed) -->
+    <string name="acraEnable_title">启用崩溃报告</string>
+    <string name="acraEnable_summary">没有收集个人信息</string>
+    <string name="acraUserEmail_title">联系信息</string>
+    <string name="acraUserEmail_summary">你的 paulscode.com 用户名 (可选)</string>
+
+    <!-- Seek Bar Preferences (selected value and units will become the summary -->
+    <string name="touchscreenTransparency_title">按钮透明度</string>
+    <string name="touchscreenScale_title">按钮大小</string>
+    <string name="videoActionBarTransparency_title">行动栏透明度</string>
+
+    <!-- Path Preferences (selected path will become the summary) -->
+    <!-- '~' indicates rel path & use storage dir if path doesn't exist -->
+    <!-- '!' indicates rel path & create parent dirs if path doesn't exist -->
+    <string name="pathPreference_dialogTitle">已选择的文件夹: %1$s</string>
+    <string name="pathSelectedGame_title">游戏</string>
+    <string name="pathSelectedGame_default">~roms/n64</string>
+    <string name="pathCustomTouchscreen_title">自定义布局文件夹</string>
+    <string name="pathCustomTouchscreen_default">~</string>
+    <string name="pathHiResTextures_title">外部纹理包</string>
+    <string name="pathHiResTextures_summary">为游戏应用自定义纹理包 (ZIP格式)</string>
+    <string name="pathHiResTextures_default">~</string>
+    <string name="pathGameSaves_title">游戏存档文件夹</string>
+    <string name="pathGameSaves_default">!mupen64plus</string>
+
+    <!-- Player Map Preferences -->
+    <string name="playerMap_title">多玩家</string>
+    <string name="playerMap_summary">自定义每个玩家的控制器</string>
+
+    <!-- Input Map Preferences -->
+    <string name="inputMap1_title">控制器</string>
+    <string name="inputMap2_title">玩家2</string>
+    <string name="inputMap3_title">玩家3</string>
+    <string name="inputMap4_title">玩家4</string>
+    <string name="inputMap_summary">按钮与特殊功能映射</string>
+
+    <!-- ************************************************************************** -->
+    <!-- Dialogs and Other Feedback -->
+    <!-- Developers: Use formatting arguments rather than string concatenation: -->
+    <!-- http://developer.android.com/guide/topics/resources/string-resource.html -->
+    <!-- ************************************************************************** -->
+
+
+    <!-- Confirmation Dialogs -->
+    <string name="confirm_title">确认</string>
+    <string name="confirmResetGame_message">重置游戏? 将会失去上次存档之后的所有进度.</string>
+    <string name="confirmOverwriteFile_message">覆盖 %1$s?</string>
+    <string name="confirmLoadProfile_message">载入配置文件 \"%1$s\" 到 %2$s?</string>
+    <string name="confirmUnmapAll_message">为 %1$s 取消所有输入?</string>
+
+    <!-- Change Log -->
+    <string name="changeLog_dialogTitle">更新日志</string>
+
+    <!-- Corrupt Installation Warning -->
+    <string name="invalidInstall_title">警告</string>
+    <string name="invalidInstall_message">N64模拟器可能没有正常安装. 如果出现任何崩溃的问题请尝试重新安装应用程序.</string>
+
+    <!-- Text Editor Hints (start lower-case) -->
+    <string name="hintFileSave">文件名称</string>
+
+    <!-- Asset Extractor -->
+    <string name="assetExtractor_initializing">正在初始化</string>
+    <string name="assetExtractor_progress">%1$.0f%% 完成: %2$s</string>
+    <string name="assetExtractor_finished">已完成</string>
+    <string name="assetExtractor_failed">"提取应用程序数据错误.请拔掉USB数据线, 重启设备, 并重启应用程序.如需获取帮助, 请访问 %1$s."</string>
+
+    <!-- Cheats Configuration -->
+    <string name="cheats_defaultName">金手指 %1$d</string>
+    <string name="cheats_longPress">(长按全部文本)</string>
+    <string name="cheat_disabled">(禁用)</string>
+    <string name="cheatOption_title">全部文本</string>
+    <string name="cheatNotes_title">注释</string>
+    <string name="cheatNotes_none">(此金手指无注释)</string>
+
+    <!-- Hi-Res Texture Unpacking -->
+    <string name="pathHiResTexturesTask_title">解包纹理</string>
+    <string name="pathHiResTexturesTask_message">请忍耐. 此过程会花费一些时间.</string>
+    <string name="pathHiResTexturesTask_errorMessage">解包纹理时出现问题!</string>
+
+    <!-- Seek Bar Preference -->
+    <string name="seekBarPreference_summary">%1$d %2$s</string>
+
+    <!-- Path Preference -->
+    <string name="pathPreference_parentFolder">上一级</string>
+
+    <!-- Player Mapping -->
+    <string name="playerMap_deviceWithName">设备 %1$d (%2$s)</string>
+    <string name="playerMap_deviceWithoutName">设备 %1$d</string>
+    <string name="playerMapPreference_popupTitle">玩家 %1$d</string>
+    <string name="playerMapPreference_popupMessage">"玩家 %1$d, 点击一下你的控制器上的按钮或者摇杆…当前设备:%2$s"</string>
+    <string name="playerMapPreference_popupUnmap">取消</string>
+    <string name="playerMapPreference_button">"玩家 %1$d%2$s"</string>
+    <string name="playerMapPreference_reminder">当玩家没有映射时提醒我</string>
+
+    <!-- Input Mapping -->
+    <string name="inputMapActivity_popupMessage">"点击一下按钮, 按键, 或者摇杆来映射…当前映射:%1$s"</string>
+    <string name="inputMapActivity_popupUnmap">取消</string>
+    <string name="inputMapActivity_aPadXperiaPlay">模拟摇杆控制与触摸板</string>
+    <string name="inputMapActivity_cPadXperiaPlay">C-pad 控制与触摸板</string>
+    <string name="inputMapActivity_btnA">A</string>
+    <string name="inputMapActivity_btnB">B</string>
+    <string name="inputMapActivity_btnC">C</string>
+    <string name="inputMapActivity_btnL">L</string>
+    <string name="inputMapActivity_btnR">R</string>
+    <string name="inputMapActivity_btnZ">Z</string>
+    <string name="inputMapActivity_btnS">S</string>
+    <string name="inputMapActivity_btnCR">C-pad →</string>
+    <string name="inputMapActivity_btnCL">C-pad ←</string>
+    <string name="inputMapActivity_btnCD">C-pad ↓</string>
+    <string name="inputMapActivity_btnCU">C-pad ↑</string>
+    <string name="inputMapActivity_btnDR">D-pad →</string>
+    <string name="inputMapActivity_btnDL">D-pad ←</string>
+    <string name="inputMapActivity_btnDD">D-pad ↓</string>
+    <string name="inputMapActivity_btnDU">D-pad ↑</string>
+    <string name="inputMapActivity_btnAR">模拟 →</string>
+    <string name="inputMapActivity_btnAL">模拟 ←</string>
+    <string name="inputMapActivity_btnAD">模拟 ↓</string>
+    <string name="inputMapActivity_btnAU">模拟 ↑</string>
+    <string name="inputMapActivity_incrementSlot">增加槽位</string>
+    <string name="inputMapActivity_reset">重置</string>
+    <string name="inputMapActivity_pause">暂停</string>
+    <string name="inputMapActivity_stop">停止</string>
+    <string name="inputMapActivity_frameAdvance">帧速提前</string>
+    <string name="inputMapActivity_fastForward">快进</string>
+    <string name="inputMapActivity_speedDown">减速</string>
+    <string name="inputMapActivity_speedUp">加速</string>
+    <string name="inputMapActivity_gameshark">游戏欺骗</string>
+    <string name="inputMapActivity_simulateBack">返回键</string>
+    <string name="inputMapActivity_simulateMenu">菜单键</string>
+
+    <!-- Controller Diagnostics -->
+    <string name="diagnosticActivity_textKey_text">点击按钮或者按键…</string>
+    <string name="diagnosticActivity_textMotion_text">触摸屏幕或者摇杆…</string>
+
+</resources>
